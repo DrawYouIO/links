@@ -1,0 +1,89 @@
+/* title */
+h1 {
+	font-family: impact;
+	font-size: 100px;
+	color: rgb(235, 220, 255);
+	text-align: center;
+}
+h2 {
+	font-family: segoe script;
+	font-size: 60px;
+	color: white;
+	text-shadow: 1px 1px rgb(91, 24, 48);
+	word-spacing: 30px;
+	text-align: center;
+	margin-top: -170px;
+}
+
+
+/* pictures */
+#pp {
+	border-radius: 150px;
+	border : 3px solid rgb(255, 126, 183);
+	max-width: 12%;
+	display: block;
+	margin: auto;
+}
+
+
+/* links container */
+.box {
+	margin: 20px auto;
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 95%;
+}
+
+
+/* links */
+.links {
+	border: 3px solid rgb(208, 223, 255);
+	min-width: 90%; 
+	margin: 10px;
+	padding: 5px;
+	border-radius: 2px;
+}
+
+.links:hover {
+	transform: translate(0, -2px);
+	box-shadow: 3px 3px rgb(255, 126, 183);
+}
+
+#first {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+#last {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.links a {
+	text-decoration: none;
+	color: rgb(134, 15, 68);
+	font-family: impact;
+	font-size: 20px;
+	display: block;
+	width: 100%;
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 900px){
+	.box {
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 530px){
+	h1 {
+		font-size: 70px;
+	}
+	h2 {
+		font-size: 30px;
+		margin-top: -110px;
+	}
+}
