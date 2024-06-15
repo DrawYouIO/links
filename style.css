@@ -76,6 +76,9 @@ h2 {
 	.box {
 		max-width: 100%;
 	}
+	#pp {
+		max-width: 17%
+	}
 }
 
 @media screen and (max-width: 530px){
@@ -85,5 +88,8 @@ h2 {
 	h2 {
 		font-size: 30px;
 		margin-top: -110px;
+	}
+	#pp {
+		max-width: 20%
 	}
 }
