@@ -44,6 +44,7 @@ h2 {
 	top: 12em;
 	left: -2em;
 	z-index: -1;
+	max-height: 45%
 }
 
 #doll {
