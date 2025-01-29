@@ -2,29 +2,55 @@
 h1 {
 	font-family: impact;
 	font-size: 100px;
-	color: rgb(235, 220, 255);
+	color: rgb(134, 15, 68);
 	text-align: center;
 }
 h2 {
 	font-family: segoe script;
 	font-size: 60px;
 	color: white;
-	text-shadow: 1px 1px rgb(91, 24, 48);
+	text-shadow: 2px 2px rgb(91, 24, 48);
 	word-spacing: 30px;
 	text-align: center;
 	margin-top: -170px;
 }
 
 
-/* pictures */
-#pp {
-	border-radius: 150px;
-	border : 3px solid rgb(255, 126, 183);
-	max-width: 12%;
-	display: block;
+.categories {
+	max-width: 70%;
 	margin: auto;
 }
 
+.categories p {
+	line-height: 10px;
+	font-family: helvetica;
+	font-size: 18px;
+	font-weight: bold;
+	color: rgb(134, 15, 68);
+	text-shadow: white 2px 2px;
+}
+
+/* pictures */
+#pp {
+	border-radius: 150px;
+	border: 2px solid rgb(134, 15, 68);
+	max-width: 12%;
+	display: block;
+	margin: auto auto 8em auto;
+}
+
+#angel {
+	position: absolute;
+	top: 12em;
+	left: -2em;
+	z-index: -1;
+}
+
+#doll {
+	position: absolute;
+	right: 0.5em;
+	bottom: 0.2em;
+}
 
 /* links container */
 .box {
@@ -33,35 +59,42 @@ h2 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	max-width: 95%;
+	max-width: 70%;
+}
+
+#link2 {
+	max-width: 70%;
+	margin: auto;
 }
 
 
 /* links */
 .links {
-	border: 3px solid rgb(208, 223, 255);
+	border: 3px solid rgb(134, 15, 68);
+	background-color: white;
 	min-width: 90%; 
-	margin: 10px;
+	margin: 5px;
 	padding: 5px;
 	border-radius: 2px;
 }
 
 .links:hover {
 	transform: translate(0, -2px);
-	box-shadow: 3px 3px rgb(255, 126, 183);
+	box-shadow: 3px 3px rgb(134, 15, 68);
 }
 
 #first {
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
 }
 
 #last {
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
 }
 
 .links a {
+	margin: 5px 5px 5px 15px;
 	text-decoration: none;
 	color: rgb(134, 15, 68);
 	font-family: impact;
@@ -70,14 +103,39 @@ h2 {
 	width: 100%;
 }
 
+#link2 a, #today{
+	text-decoration: none;
+	color: rgb(134, 15, 68);
+	margin: 5px;
+}
+
+
 
 /* RESPONSIVE */
 @media screen and (max-width: 900px){
+	.categories {
+		max-width: 100%;
+	}
+	
 	.box {
 		max-width: 100%;
 	}
+	
+	#link2 {
+		max-width: 100%;
+	}
+	
 	#pp {
-		max-width: 17%
+		max-width: 20%;
+	}
+	
+	#angel {
+		max-width: 50%;
+		left: -1em;
+	}
+	
+	#doll {
+		max-width: 50%;
 	}
 }
 
@@ -85,10 +143,12 @@ h2 {
 	h1 {
 		font-size: 70px;
 	}
+	
 	h2 {
 		font-size: 30px;
 		margin-top: -110px;
 	}
+	
 	#pp {
 		max-width: 20%
 	}
