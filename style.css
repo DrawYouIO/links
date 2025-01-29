@@ -48,8 +48,9 @@ h2 {
 
 #doll {
 	position: absolute;
+	top: 12em;
 	right: 0.5em;
-	bottom: 0.2em;
+	max-height: 45%;
 }
 
 /* links container */
